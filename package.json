@@ -1,0 +1,29 @@
+{
+  "name": "gmw",
+  "version": "1.0.0",
+  "description": "First keystone app",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start:dev": "keystone"
+  },
+  "keywords": [
+    "Express",
+    "mongo",
+    "db",
+    "node",
+    "js"
+  ],
+  "author": "ISA",
+  "license": "ISC",
+  "dependencies": {
+    "@keystonejs/adapter-mongoose": "^9.0.4",
+    "@keystonejs/app-admin-ui": "^7.3.3",
+    "@keystonejs/app-graphql": "^6.1.1",
+    "@keystonejs/auth-password": "^5.1.14",
+    "@keystonejs/fields": "^17.1.0",
+    "@keystonejs/keystone": "^14.0.1",
+    "@keystonejs/server-side-graphql-client": "^1.1.1",
+    "express": "^4.17.1"
+  }
+}
