@@ -3,6 +3,7 @@ const { PasswordAuthStrategy } = require('@keystonejs/auth-password');
 const { MongooseAdapter } = require('@keystonejs/adapter-mongoose');
 const { GraphQLApp } = require('@keystonejs/app-graphql');
 const { AdminUIApp } = require('@keystonejs/app-admin-ui');
+const { StaticApp } = require('@keystonejs/app-static');
 const initialiseData = require('./initial-data');
 const db = require('./DBConfig/db.config');
 const UserList = require('./Lists/User');
@@ -35,6 +36,11 @@ module.exports = {
             name: "Germew",
             enableDefaultRoute: true,
             authStrategy,
+        }),
+        new StaticApp({
+            path: '/public/uploads',
+            src: './public/uploads',
+
         }),
     ],
 

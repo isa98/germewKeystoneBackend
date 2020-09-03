@@ -2,59 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="006b3848-fce5-46a2-be8a-0e23eb1ed0e6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Controllers/TestController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lists/Test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controllers/GrammarController.js" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/GrammarController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/LevelController.js" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/LevelController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lists/Grammar.js" beforeDir="false" afterPath="$PROJECT_DIR$/Lists/Grammar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lists/Level.js" beforeDir="false" afterPath="$PROJECT_DIR$/Lists/Level.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Routes/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/Routes/Routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.bin/mkdirp" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/mkdirp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.yarn-integrity" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.yarn-integrity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/events/.airtap.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/events/.github/FUNDING.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/events/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/events/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/events/History.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/events/History.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/events/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/events/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/events/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/events/events.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/events/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/events/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/events/security.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/events/tests/add-listeners.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/events/tests/add-listeners.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/events/tests/check-listener-leaks.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/events/tests/check-listener-leaks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/events/tests/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/events/tests/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/events/tests/errors.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/events/tests/events-list.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/events/tests/events-once.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/events/tests/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/events/tests/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/events/tests/legacy-compat.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/events/tests/legacy-compat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/events/tests/listener-count.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/events/tests/listener-count.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/events/tests/listeners-side-effects.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/events/tests/listeners-side-effects.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/events/tests/listeners.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/events/tests/listeners.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/events/tests/max-listeners.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/events/tests/max-listeners.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/events/tests/method-names.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/events/tests/modify-in-emit.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/events/tests/modify-in-emit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/events/tests/num-args.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/events/tests/num-args.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/events/tests/once.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/events/tests/once.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/events/tests/prepend.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/events/tests/remove-all-listeners.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/events/tests/remove-all-listeners.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/events/tests/remove-listeners.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/events/tests/remove-listeners.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/events/tests/set-max-listeners-side-effects.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/events/tests/set-max-listeners-side-effects.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/events/tests/special-event-names.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/events/tests/subclass.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/events/tests/subclass.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/events/tests/symbols.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/punycode/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/punycode/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/punycode/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/punycode/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/punycode/punycode.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/punycode/punycode.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/url/node_modules/punycode/LICENSE-MIT.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/url/node_modules/punycode/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/url/node_modules/punycode/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/url/node_modules/punycode/punycode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/url/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/url/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/url/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/url/test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/url/url.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/url/url.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/url/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/fs-capacitor/.eslintignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/fs-capacitor/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/fs-capacitor/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/fs-capacitor/.huskyrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/fs-capacitor/.lintstagedrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/fs-capacitor/.npmrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/fs-capacitor/.prettierignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/fs-capacitor/.prettierrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/fs-capacitor/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/fs-capacitor/babel.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/fs-capacitor/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/fs-capacitor/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/fs-capacitor/src/index.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/fs-capacitor/src/test.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/graphql-upload/changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/graphql-upload/changelog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/graphql-upload/lib/GraphQLUpload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/graphql-upload/lib/GraphQLUpload.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/graphql-upload/lib/constants.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/graphql-upload/lib/constants.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/graphql-upload/lib/graphqlUploadExpress.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/graphql-upload/lib/graphqlUploadExpress.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/graphql-upload/lib/graphqlUploadKoa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/graphql-upload/lib/graphqlUploadKoa.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/graphql-upload/lib/ignoreStream.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/graphql-upload/lib/ignoreStream.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/graphql-upload/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/graphql-upload/lib/index.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/graphql-upload/lib/isEnumerableObject.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/graphql-upload/lib/isEnumerableObject.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/graphql-upload/lib/processRequest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/graphql-upload/lib/processRequest.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/graphql-upload/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/graphql-upload/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/graphql-upload/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/graphql-upload/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
@@ -119,7 +103,8 @@
       <workItem from="1598937752685" duration="19537000" />
       <workItem from="1599039160107" duration="13008000" />
       <workItem from="1599057199410" duration="30000" />
-      <workItem from="1599108855311" duration="15139000" />
+      <workItem from="1599108855311" duration="19344000" />
+      <workItem from="1599140930227" duration="2980000" />
     </task>
     <task id="LOCAL-00001" summary="creating levels grammars get api">
       <created>1599056754975</created>
@@ -128,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599056754975</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="adding image into file">
+      <created>1599130897751</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1599130897751</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,25 +128,26 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="creating levels grammars get api" />
-    <option name="LAST_COMMIT_MESSAGE" value="creating levels grammars get api" />
+    <MESSAGE value="adding image into file" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding image into file" />
   </component>
   <component name="WindowStateProjectService">
     <state x="698" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599121633429">
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
     <state x="698" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.24.1920.1056@0.24.1920.1056" timestamp="1599121633429" />
-    <state x="504" y="96" key="CommitChangelistDialog2" timestamp="1599056709553">
+    <state x="504" y="96" key="CommitChangelistDialog2" timestamp="1599130895994">
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
-    <state x="504" y="96" key="CommitChangelistDialog2/0.24.1920.1056@0.24.1920.1056" timestamp="1599056709553" />
+    <state x="504" y="96" key="CommitChangelistDialog2/0.24.1920.1056@0.24.1920.1056" timestamp="1599130895994" />
     <state x="748" y="297" key="FileChooserDialogImpl" timestamp="1599056392166">
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
     <state x="748" y="297" key="FileChooserDialogImpl/0.24.1920.1056@0.24.1920.1056" timestamp="1599056392166" />
-    <state x="560" y="275" key="Vcs.Push.Dialog.v2" timestamp="1599056770549">
+    <state x="560" y="275" key="Vcs.Push.Dialog.v2" timestamp="1599130902202">
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
-    <state x="560" y="275" key="Vcs.Push.Dialog.v2/0.24.1920.1056@0.24.1920.1056" timestamp="1599056770549" />
+    <state x="560" y="275" key="Vcs.Push.Dialog.v2/0.24.1920.1056@0.24.1920.1056" timestamp="1599130902202" />
     <state x="703" y="256" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1599056503769">
       <screen x="0" y="24" width="1920" height="1056" />
     </state>

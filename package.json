@@ -20,11 +20,13 @@
     "@keystonejs/adapter-mongoose": "^9.0.4",
     "@keystonejs/app-admin-ui": "^7.3.3",
     "@keystonejs/app-graphql": "^6.1.1",
+    "@keystonejs/app-static": "^5.1.3",
     "@keystonejs/auth-password": "^5.1.14",
     "@keystonejs/fields": "^17.1.0",
     "@keystonejs/file-adapters": "^7.0.4",
     "@keystonejs/keystone": "^14.0.1",
     "@keystonejs/server-side-graphql-client": "^1.1.1",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "graphql-upload": "^11.0.0"
   }
 }

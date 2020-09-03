@@ -20,6 +20,7 @@ keystone
         app.use(middlewares).listen(db.apiPort,()=>{
             console.log('Server is running' + db.apiPort);
         });
+        // app.use(express.static(__dirname + '/files')); //Serves resources from public folder
 
         app.get('/test',(req , res)=>{
             res.send('Hello isa');

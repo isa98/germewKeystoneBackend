@@ -5,7 +5,7 @@ exports.getAllLevels= async(req , res ) =>{
     const allLevels = await getItems({
         keystone,
         listKey:'Level',
-        returnFields:'id , title'
+        returnFields:'id,title,file'
     })
 
     res.send(allLevels);
