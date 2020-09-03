@@ -5,12 +5,10 @@ const { GraphQLApp } = require('@keystonejs/app-graphql');
 const { AdminUIApp } = require('@keystonejs/app-admin-ui');
 const initialiseData = require('./initial-data');
 const db = require('./DBConfig/db.config');
-
-const LevelList = require('./Lists/Level');
 const UserList = require('./Lists/User');
-
+const LevelList = require('./Lists/Level');
 const GrammarList = require('./Lists/Grammar');
-
+const TestList = require('./Lists/Test');
 
 const keystone =  new Keystone({
     adapter: new MongooseAdapter({ mongoUri: db.url }),
@@ -20,6 +18,7 @@ const keystone =  new Keystone({
 keystone.createList('User',UserList);
 keystone.createList('Level',LevelList);
 keystone.createList('Grammar',GrammarList);
+keystone.createList('Test',TestList);
 
 
 const authStrategy = keystone.createAuthStrategy({
@@ -30,9 +29,7 @@ const authStrategy = keystone.createAuthStrategy({
 module.exports = {
     keystone,
     apps: [
-        new GraphQLApp(
-
-        ),
+        new GraphQLApp(),
         new AdminUIApp({
             adminPath: '/admin',
             name: "Germew",

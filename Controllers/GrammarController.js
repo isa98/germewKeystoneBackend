@@ -4,7 +4,7 @@ const { keystone } = require('../index');
 
 exports.getAllGrammars= async (req , res )=>{
 
-    const allUsers = await getItems({ keystone, listKey: 'Grammar', returnFields: 'tm , ru , en , slug' });
+    const allUsers = await getItems({ keystone, listKey: 'Grammar', returnFields: 'level , title' });
     res.send(allUsers);
 }
 

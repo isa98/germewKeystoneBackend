@@ -22,6 +22,7 @@
     "@keystonejs/app-graphql": "^6.1.1",
     "@keystonejs/auth-password": "^5.1.14",
     "@keystonejs/fields": "^17.1.0",
+    "@keystonejs/file-adapters": "^7.0.4",
     "@keystonejs/keystone": "^14.0.1",
     "@keystonejs/server-side-graphql-client": "^1.1.1",
     "express": "^4.17.1"

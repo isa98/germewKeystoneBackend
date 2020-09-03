@@ -1,11 +1,12 @@
 const { getItems , getItem } = require('@keystonejs/server-side-graphql-client');
 const { keystone } = require('../index');
 
+exports.getAllLevels= async(req , res ) =>{
+    const allLevels = await getItems({
+        keystone,
+        listKey:'Level',
+        returnFields:'id , title'
+    })
 
-exports.getAllLevels= async (req , res )=>{
-
-    const allUsers = await getItems({ keystone, listKey: 'Level', returnFields: 'tm , ru , en , slug' });
-    res.send(allUsers);
+    res.send(allLevels);
 }
-
-

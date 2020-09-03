@@ -1,33 +1,28 @@
-const { Text,  } = require('@keystonejs/fields');
+const { Text , File } = require('@keystonejs/fields');
+const { LocalFileAdapter } = require('@keystonejs/file-adapters');
 
+
+const fileAdapter = new LocalFileAdapter({
+    src: './files',
+    path: '/files',
+});
 
 module.exports={
     fields:{
-        tm: {
-            type: Text,
+        title:{
+            type:Text,
             isRequired:true,
-            isUnique:true,
-
 
         },
-        ru: {
-            type: Text,
-            isRequired:true,
-            isUnique:true,
+        file: {
+            type: File,
+            adapter: fileAdapter,
 
         },
-        en: {
-            type: Text,
-            isRequired:true,
-            isUnique:true,
 
-        },
-        slug: {
-            type: Text,
-            isRequired:true,
-            isUnique:true,
 
-        },
+
     },
+
 
 }
