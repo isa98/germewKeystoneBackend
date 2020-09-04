@@ -4,44 +4,9 @@
     <list default="true" id="006b3848-fce5-46a2-be8a-0e23eb1ed0e6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/LevelController.js" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/LevelController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lists/Grammar.js" beforeDir="false" afterPath="$PROJECT_DIR$/Lists/Grammar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lists/Level.js" beforeDir="false" afterPath="$PROJECT_DIR$/Lists/Level.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.yarn-integrity" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.yarn-integrity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/fs-capacitor/.eslintignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/fs-capacitor/.eslintrc.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/fs-capacitor/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/fs-capacitor/.huskyrc.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/fs-capacitor/.lintstagedrc.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/fs-capacitor/.npmrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/fs-capacitor/.prettierignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/fs-capacitor/.prettierrc.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/fs-capacitor/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/fs-capacitor/babel.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/fs-capacitor/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/fs-capacitor/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/fs-capacitor/src/index.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/fs-capacitor/src/test.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/graphql-upload/changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/graphql-upload/changelog.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/graphql-upload/lib/GraphQLUpload.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/graphql-upload/lib/GraphQLUpload.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/graphql-upload/lib/constants.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/graphql-upload/lib/constants.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/graphql-upload/lib/graphqlUploadExpress.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/graphql-upload/lib/graphqlUploadExpress.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/graphql-upload/lib/graphqlUploadKoa.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/graphql-upload/lib/graphqlUploadKoa.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/graphql-upload/lib/ignoreStream.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/graphql-upload/lib/ignoreStream.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/graphql-upload/lib/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/graphql-upload/lib/index.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/graphql-upload/lib/isEnumerableObject.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/graphql-upload/lib/isEnumerableObject.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/graphql-upload/lib/processRequest.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/graphql-upload/lib/processRequest.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/graphql-upload/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/graphql-upload/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/graphql-upload/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/graphql-upload/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +69,8 @@
       <workItem from="1599039160107" duration="13008000" />
       <workItem from="1599057199410" duration="30000" />
       <workItem from="1599108855311" duration="19344000" />
-      <workItem from="1599140930227" duration="2980000" />
+      <workItem from="1599140930227" duration="3039000" />
+      <workItem from="1599217054737" duration="4271000" />
     </task>
     <task id="LOCAL-00001" summary="creating levels grammars get api">
       <created>1599056754975</created>
@@ -120,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599130897751</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="solving error in adding file to insert image with crrect way">
+      <created>1599144478667</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1599144478667</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,25 +102,26 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="creating levels grammars get api" />
     <MESSAGE value="adding image into file" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding image into file" />
+    <MESSAGE value="solving error in adding file to insert image with crrect way" />
+    <option name="LAST_COMMIT_MESSAGE" value="solving error in adding file to insert image with crrect way" />
   </component>
   <component name="WindowStateProjectService">
     <state x="698" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599121633429">
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
     <state x="698" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.24.1920.1056@0.24.1920.1056" timestamp="1599121633429" />
-    <state x="504" y="96" key="CommitChangelistDialog2" timestamp="1599130895994">
+    <state x="504" y="96" key="CommitChangelistDialog2" timestamp="1599144477312">
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
-    <state x="504" y="96" key="CommitChangelistDialog2/0.24.1920.1056@0.24.1920.1056" timestamp="1599130895994" />
+    <state x="504" y="96" key="CommitChangelistDialog2/0.24.1920.1056@0.24.1920.1056" timestamp="1599144477311" />
     <state x="748" y="297" key="FileChooserDialogImpl" timestamp="1599056392166">
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
     <state x="748" y="297" key="FileChooserDialogImpl/0.24.1920.1056@0.24.1920.1056" timestamp="1599056392166" />
-    <state x="560" y="275" key="Vcs.Push.Dialog.v2" timestamp="1599130902202">
+    <state x="560" y="275" key="Vcs.Push.Dialog.v2" timestamp="1599144480666">
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
-    <state x="560" y="275" key="Vcs.Push.Dialog.v2/0.24.1920.1056@0.24.1920.1056" timestamp="1599130902202" />
+    <state x="560" y="275" key="Vcs.Push.Dialog.v2/0.24.1920.1056@0.24.1920.1056" timestamp="1599144480666" />
     <state x="703" y="256" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1599056503769">
       <screen x="0" y="24" width="1920" height="1056" />
     </state>

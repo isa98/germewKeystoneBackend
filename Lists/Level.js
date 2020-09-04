@@ -1,4 +1,4 @@
-const { Text , File } = require('@keystonejs/fields');
+const { Text , File  , Relationship , Select} = require('@keystonejs/fields');
 const { LocalFileAdapter } = require('@keystonejs/file-adapters');
 
 
@@ -13,6 +13,7 @@ module.exports={
         title:{
             type:Text,
             isRequired:true,
+            isUnique:true,
 
         },
         file: {
@@ -20,6 +21,7 @@ module.exports={
             adapter: fileAdapter,
 
         },
+
 
 
 
