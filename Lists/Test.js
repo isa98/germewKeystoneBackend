@@ -9,40 +9,19 @@ module.exports={
             isRequired:true,
             many:false
         },
-        QuestionNumber:{
-            type:Text,
-             isRequired:true,
-
+        TestType:{
+            type:Relationship,
+            ref:'TestType',
+            isRequired: true,
+            many: false
         },
-        QuestionTitle:{
+       number:{
+            type:Text,
+           isRequired:true,
+       },
+        TestTitle:{
             type:Text,
             isRequired:true,
-
-        },
-        a:{
-            type:Text,
-            isRequired:true,
-
-        },
-        b:{
-            type:Text,
-            isRequired:true,
-
-        },
-        c:{
-            type:Text,
-            isRequired:true,
-
-        },
-        d:{
-            type:Text,
-            isRequired:true,
-
-        },
-        TrueAnswer:{
-            type:Text,
-             isRequired:true,
-
         }
 
     },

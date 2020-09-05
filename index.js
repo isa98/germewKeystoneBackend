@@ -10,6 +10,11 @@ const UserList = require('./Lists/User');
 const LevelList = require('./Lists/Level');
 const GrammarList = require('./Lists/Grammar');
 const TestList = require('./Lists/Test');
+const TestTypeList = require('./Lists/TestType');
+const QuestionList = require('./Lists/Questions');
+const AnswerList = require('./Lists/Answers');
+const ResultList = require('./Lists/Result');
+
 
 const keystone =  new Keystone({
     adapter: new MongooseAdapter({ mongoUri: db.url }),
@@ -19,7 +24,13 @@ const keystone =  new Keystone({
 keystone.createList('User',UserList);
 keystone.createList('Level',LevelList);
 keystone.createList('Grammar',GrammarList);
+keystone.createList('TestType',TestTypeList);
 keystone.createList('Test',TestList);
+keystone.createList('Question',QuestionList);
+keystone.createList('Answer',AnswerList);
+keystone.createList('Result',ResultList);
+
+
 
 
 const authStrategy = keystone.createAuthStrategy({

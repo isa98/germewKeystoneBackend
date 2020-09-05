@@ -9,13 +9,24 @@ module.exports={
             isRequired:true,
             many:false,
         },
+        number:{
+          type:Text,
+          isRequired:true,
+        },
         title:{
             type:Text,
             isRequired:true,
-            isUnique:true,
-
-
-        }
+        },
+        clarificationTm:{
+            type:Text,
+            isRequired:true,
+            isMultiline:true
+        },
+        clarificationEn:{
+            type:Text,
+            isRequired:true,
+            isMultiline:true
+        },
 
     },
 

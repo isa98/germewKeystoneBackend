@@ -10,17 +10,29 @@ const fileAdapter = new LocalFileAdapter({
 
 module.exports={
     fields:{
+        number:{
+            type:Text,
+            isRequired:true
+        },
         title:{
             type:Text,
             isRequired:true,
-            isUnique:true,
-
+             },
+        descriptionTm:{
+            type:Text,
+            isRequired: true,
         },
-        file: {
+        descriptionEn:{
+            type:Text,
+            isRequired: true,
+        },
+        image: {
             type: File,
             adapter: fileAdapter,
+            isRequired:true,
+            },
 
-        },
+
 
 
 
