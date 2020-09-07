@@ -8,36 +8,46 @@ const fileAdapter = new LocalFileAdapter({
 
 });
 
-module.exports={
-    fields:{
-        number:{
-            type:Text,
-            isRequired:true
+module.exports= {
+    fields: {
+        number: {
+            type: Text,
+            isRequired: true
         },
-        title:{
-            type:Text,
-            isRequired:true,
-             },
-        descriptionTm:{
-            type:Text,
+        title: {
+            type: Text,
             isRequired: true,
         },
-        descriptionEn:{
-            type:Text,
+        descriptionTm: {
+            type: Text,
             isRequired: true,
+            isMultiline: true,
+        },
+        descriptionEn: {
+            type: Text,
+            isRequired: true,
+            isMultiline: true,
         },
         image: {
             type: File,
             adapter: fileAdapter,
-            isRequired:true,
+            isRequired: true,
+            hooks: {
+                beforeChange: async ({existingItem}) => {
+                    if (existingItem && existingItem.file) {
+                        await fileAdapter.delete(existingItem.file);
+                    }
+                },
+                afterDelete: async ({existingItem}) => {
+                    if (existingItem.file) {
+                        await fileAdapter.delete(existingItem.file);
+                    }
+                },
             },
+        },
 
 
 
 
-
-
-    },
-
-
+    }
 }

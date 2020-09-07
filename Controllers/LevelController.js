@@ -6,7 +6,7 @@ exports.getAllLevels= async(req , res ) =>{
     const {data , errors} = await keystone.executeGraphQL({
         query:` query {
                   allLevels {
-                      id,title,image{
+                      id,title,descriptionTm,descriptionEn,image{
                       id,publicUrl
                                    }
                            }

@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="006b3848-fce5-46a2-be8a-0e23eb1ed0e6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Lists/Answers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lists/Questions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lists/Result.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lists/TestType.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lists/Paragraph.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lists/ParagraphAnswer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lists/ParagraphQuestion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lists/ParagraphResult.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/LevelController.js" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/LevelController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lists/Grammar.js" beforeDir="false" afterPath="$PROJECT_DIR$/Lists/Grammar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lists/Level.js" beforeDir="false" afterPath="$PROJECT_DIR$/Lists/Level.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lists/Test.js" beforeDir="false" afterPath="$PROJECT_DIR$/Lists/Test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +74,9 @@
       <workItem from="1599108855311" duration="19344000" />
       <workItem from="1599140930227" duration="3039000" />
       <workItem from="1599217054737" duration="4583000" />
-      <workItem from="1599297568453" duration="6312000" />
+      <workItem from="1599297568453" duration="6524000" />
+      <workItem from="1599419858206" duration="577000" />
+      <workItem from="1599475191142" duration="4773000" />
     </task>
     <task id="LOCAL-00001" summary="creating levels grammars get api">
       <created>1599056754975</created>
@@ -106,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599222593244</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="setting complete structure of backend with 8 table">
+      <created>1599318011852</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1599318011852</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,25 +124,26 @@
     <MESSAGE value="adding image into file" />
     <MESSAGE value="solving error in adding file to insert image with crrect way" />
     <MESSAGE value="getting uploaded image's path via api" />
-    <option name="LAST_COMMIT_MESSAGE" value="getting uploaded image's path via api" />
+    <MESSAGE value="setting complete structure of backend with 8 table" />
+    <option name="LAST_COMMIT_MESSAGE" value="setting complete structure of backend with 8 table" />
   </component>
   <component name="WindowStateProjectService">
     <state x="698" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599121633429">
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
     <state x="698" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.24.1920.1056@0.24.1920.1056" timestamp="1599121633429" />
-    <state x="504" y="96" key="CommitChangelistDialog2" timestamp="1599222592423">
+    <state x="504" y="96" key="CommitChangelistDialog2" timestamp="1599318011055">
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
-    <state x="504" y="96" key="CommitChangelistDialog2/0.24.1920.1056@0.24.1920.1056" timestamp="1599222592423" />
+    <state x="504" y="96" key="CommitChangelistDialog2/0.24.1920.1056@0.24.1920.1056" timestamp="1599318011055" />
     <state x="748" y="297" key="FileChooserDialogImpl" timestamp="1599056392166">
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
     <state x="748" y="297" key="FileChooserDialogImpl/0.24.1920.1056@0.24.1920.1056" timestamp="1599056392166" />
-    <state x="560" y="275" key="Vcs.Push.Dialog.v2" timestamp="1599222595690">
+    <state x="560" y="275" key="Vcs.Push.Dialog.v2" timestamp="1599318041075">
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
-    <state x="560" y="275" key="Vcs.Push.Dialog.v2/0.24.1920.1056@0.24.1920.1056" timestamp="1599222595690" />
+    <state x="560" y="275" key="Vcs.Push.Dialog.v2/0.24.1920.1056@0.24.1920.1056" timestamp="1599318041075" />
     <state x="703" y="256" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1599056503769">
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
