@@ -5,9 +5,10 @@ module.exports={
     fields:{
         level:{
             type:Relationship,
-            ref:'Level',
+            ref:'Level.grammar',
             isRequired:true,
             many:false,
+            
         },
         number:{
           type:Text,
@@ -27,8 +28,9 @@ module.exports={
             isRequired:true,
             isMultiline:true
         },
+        
 
     },
-
+    labelField: 'title'
 
 }

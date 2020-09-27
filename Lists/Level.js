@@ -14,7 +14,7 @@ module.exports= {
             type: Text,
             isRequired: true
         },
-        title: {
+        name: {
             type: Text,
             isRequired: true,
         },
@@ -45,9 +45,16 @@ module.exports= {
                 },
             },
         },
+        grammar:{
+            type:Relationship,
+            ref:'Grammar.level',
+            //refPath:'title',
+            isRequired:true,
+            many:true,
+        }
+        
 
 
-
-
-    }
+    },
+    labelField: 'name',
 }
