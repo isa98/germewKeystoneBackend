@@ -2,38 +2,45 @@ const { Text , File  , Relationship , Select} = require('@keystonejs/fields');
 const { LocalFileAdapter } = require('@keystonejs/file-adapters');
 
 
-const fileAdapter = new LocalFileAdapter({
-    src: './public/uploads',
-    path: '/public/uploads',
-
-});
 
 module.exports= {
     fields: {
-        title:{
+        punkt:{
             type:Text,
             isRequired:true,
             isUnique:true,
+           
         },
-        image: {
-            type: File,
-            adapter: fileAdapter,
-            isRequired: true,
-            
+        example1:{
+            type:Text,
+            isRequired:true,
+            isUnique:true,
+           
+        },
+        example2:{
+            type:Text,
+            isRequired:true,
+            isUnique:true,
+           
+        },
+        example3:{
+            type:Text,
+            isRequired:true,
+            isUnique:true,
+           
         },
         grammar:{
             type:Relationship,
-            ref:'Grammar.level',
+            ref:'Grammar.detail',
             //refPath:'title',
             isRequired:true,
-            many:true,
+            many:false,
         }
         
 
 
     },
-    labelField: 'title',
-    // List-level access controls
+    labelField: 'punkt',
     access: {
         read: access.userIsAdminOrOwner,
         update: access.userIsAdmin,

@@ -9,15 +9,9 @@ const db = require('./DBConfig/db.config');
 const UserList = require('./Lists/User');
 const LevelList = require('./Lists/Level');
 const GrammarList = require('./Lists/Grammar');
-const TestList = require('./Lists/Test');
-const TestTypeList = require('./Lists/TestType');
-const QuestionList = require('./Lists/Questions');
-const AnswerList = require('./Lists/Answers');
-const ResultList = require('./Lists/Result');
-const ParagraphList = require('./Lists/Paragraph');
-const ParagraphQuestionList = require('./Lists/ParagraphQuestion');
-const ParagraphAnswerList = require('./Lists/ParagraphAnswer');
-const ParagraphResultList = require('./Lists/Paragraph');
+const InferenceList = require('./Lists/Inference');
+const GrammarDetailList = require('./Lists/GrammarDetail');
+const GrammarTestList = require('./Lists/GrammarTest');
 
 
 const keystone =  new Keystone({
@@ -28,16 +22,6 @@ const keystone =  new Keystone({
 keystone.createList('User',UserList);
 keystone.createList('Level',LevelList);
 keystone.createList('Grammar',GrammarList);
-keystone.createList('TestType',TestTypeList);
-keystone.createList('Test',TestList);
-keystone.createList('Question',QuestionList);
-keystone.createList('Answer',AnswerList);
-keystone.createList('Result',ResultList);
-keystone.createList('Paragraph',ParagraphList);
-keystone.createList('ParagraphQuestion',ParagraphQuestionList);
-keystone.createList('ParagraphAnswer',ParagraphAnswerList);
-keystone.createList('ParagraphResult',ParagraphResultList);
-
 
 
 

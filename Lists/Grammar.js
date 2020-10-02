@@ -1,5 +1,25 @@
 const { Text , Relationship } = require('@keystonejs/fields');
 
+// Access control functions
+const userIsAdmin = ({ authentication: { item: user } }) => Boolean(user && user.isAdmin);
+const userOwnsItem = ({ authentication: { item: user } }) => {
+    if (!user) {
+        return false;
+    }
+
+    // Instead of a boolean, you can return a GraphQL query:
+    // https://www.keystonejs.com/api/access-control#graphqlwhere
+    return { id: user.id };
+};
+
+const userIsAdminOrOwner = auth => {
+    const isAdmin = access.userIsAdmin(auth);
+    const isOwner = access.userOwnsItem(auth);
+    return isAdmin ? isAdmin : isOwner;
+};
+
+const access = { userIsAdmin, userOwnsItem, userIsAdminOrOwner };
+
 
 module.exports={
     fields:{
@@ -18,19 +38,37 @@ module.exports={
             type:Text,
             isRequired:true,
         },
-        clarificationTm:{
+        color:{
             type:Text,
-            isRequired:true,
-            isMultiline:true
+            isRequired:true
         },
-        clarificationEn:{
-            type:Text,
+        inference:{
+            type:Relationship,
+            ref:'Inference.grammar',
             isRequired:true,
-            isMultiline:true
+            many:false,
         },
+        detail:{
+            type:Relationship,
+            ref:'GrammarDetail.grammar',
+            isRequired:true,
+            many:true,
+        },
+        test:{
+            type:Relationship,
+            ref:'GrammarTest.grammar',
+            isRequired:true,
+            many:true,
+        }
         
 
     },
-    labelField: 'title'
-
+    labelField: 'title',
+    access: {
+        read: access.userIsAdminOrOwner,
+        update: access.userIsAdmin,
+        create: access.userIsAdmin,
+        delete: access.userIsAdmin,
+        auth: true,
+    },
 }
