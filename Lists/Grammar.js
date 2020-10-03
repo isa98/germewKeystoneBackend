@@ -1,4 +1,4 @@
-const { Text , Relationship } = require('@keystonejs/fields');
+const { Text , Relationship , Select } = require('@keystonejs/fields');
 
 // Access control functions
 const userIsAdmin = ({ authentication: { item: user } }) => Boolean(user && user.isAdmin);
@@ -20,6 +20,14 @@ const userIsAdminOrOwner = auth => {
 
 const access = { userIsAdmin, userOwnsItem, userIsAdminOrOwner };
 
+const options = [
+    { value: '#4AE0C6', label: "Yasyl" },
+    { value: '#CD697E', label: "Gonur" },
+    { value: '#FC8481', label: 'Oranjiwy' },
+    { value: '#4C8FEB', label: "Gok" },
+    { value: '#8481F9', label: "Siren" },
+    { value: '#FCC299', label: 'Malocny' },
+  ];
 
 module.exports={
     fields:{
@@ -39,7 +47,7 @@ module.exports={
             isRequired:true,
         },
         color:{
-            type:Text,
+            type:Select,options, dataType: 'string',
             isRequired:true
         },
         inference:{

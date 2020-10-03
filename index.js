@@ -12,6 +12,7 @@ const GrammarList = require('./Lists/Grammar');
 const InferenceList = require('./Lists/Inference');
 const GrammarDetailList = require('./Lists/GrammarDetail');
 const GrammarTestList = require('./Lists/GrammarTest');
+const GrammarTestQuestionList = require('./Lists/GrammarTestQuestions');
 
 
 const keystone =  new Keystone({
@@ -22,6 +23,10 @@ const keystone =  new Keystone({
 keystone.createList('User',UserList);
 keystone.createList('Level',LevelList);
 keystone.createList('Grammar',GrammarList);
+keystone.createList('Inference',InferenceList);
+keystone.createList('GrammarDetail',GrammarDetailList);
+keystone.createList('GrammarTest',GrammarTestList);
+keystone.createList('GrammarTestQuestion',GrammarTestQuestionList);
 
 
 

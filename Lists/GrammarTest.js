@@ -1,10 +1,44 @@
 const { Text , File  , Relationship , Select} = require('@keystonejs/fields');
 const { LocalFileAdapter } = require('@keystonejs/file-adapters');
 
+// Access control functions
+const userIsAdmin = ({ authentication: { item: user } }) => Boolean(user && user.isAdmin);
+const userOwnsItem = ({ authentication: { item: user } }) => {
+    if (!user) {
+        return false;
+    }
 
+    // Instead of a boolean, you can return a GraphQL query:
+    // https://www.keystonejs.com/api/access-control#graphqlwhere
+    return { id: user.id };
+};
+
+const userIsAdminOrOwner = auth => {
+    const isAdmin = access.userIsAdmin(auth);
+    const isOwner = access.userOwnsItem(auth);
+    return isAdmin ? isAdmin : isOwner;
+};
+
+const access = { userIsAdmin, userOwnsItem, userIsAdminOrOwner };
+
+const options = [
+    { value: '#4AE0C6', label: "Yasyl" },
+    { value: '#EB6085', label: "Gyzyl" },
+    { value: '#FC8481', label: 'Oranjiwy' },
+    { value: '#4C8FEB', label: "Gok" },
+    { value: '#8481F9', label: "Siren" },
+    { value: '#FCC299', label: 'Malocny' },
+  ];
 
 module.exports= {
     fields: {
+        grammar:{
+            type:Relationship,
+            ref:'Grammar.test',
+            //refPath:'title',
+            isRequired:true,
+            many:false,
+        },
         number:{
             type:Text,
             isRequired:true,
@@ -12,19 +46,19 @@ module.exports= {
            
         },
         color:{
-            type:Text,
+            type:Select,options, dataType: 'string',
             isRequired:true,
             
            
         },
-       
-        grammar:{
+        question:{
             type:Relationship,
-            ref:'Grammar.test',
-            //refPath:'title',
-            isRequired:true,
-            many:false,
+            ref:'GrammarTestQuestion.test',
+            many:true,
+            isRequired:true
         }
+       
+        
         
 
 
