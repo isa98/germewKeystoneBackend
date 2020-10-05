@@ -34,7 +34,7 @@ module.exports= {
     fields: {
         grammar:{
             type:Relationship,
-            ref:'Grammar.test',
+            ref:'Grammar.grammarTest',
             //refPath:'title',
             isRequired:true,
             many:false,
@@ -55,7 +55,7 @@ module.exports= {
             type:Relationship,
             ref:'GrammarTestQuestion.test',
             many:true,
-            isRequired:true
+            
         }
        
         
@@ -65,7 +65,7 @@ module.exports= {
     },
     labelField: 'number',
     access: {
-        read: access.userIsAdminOrOwner,
+        read: access.userIsAdmin,
         update: access.userIsAdmin,
         create: access.userIsAdmin,
         delete: access.userIsAdmin,

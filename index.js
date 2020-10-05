@@ -13,6 +13,10 @@ const InferenceList = require('./Lists/Inference');
 const GrammarDetailList = require('./Lists/GrammarDetail');
 const GrammarTestList = require('./Lists/GrammarTest');
 const GrammarTestQuestionList = require('./Lists/GrammarTestQuestions');
+const ReadingTopicList = require('./Lists/ReadingTopic');
+const ReadingTopicQuestionList = require('./Lists/ReadingTopicQuestion');
+const VocabularyTestList = require('./Lists/VocabularyTest');
+const VocabularyTestQuestionList = require('./Lists/VocabularyTestQuestion');
 
 
 const keystone =  new Keystone({
@@ -27,6 +31,10 @@ keystone.createList('Inference',InferenceList);
 keystone.createList('GrammarDetail',GrammarDetailList);
 keystone.createList('GrammarTest',GrammarTestList);
 keystone.createList('GrammarTestQuestion',GrammarTestQuestionList);
+keystone.createList('ReadingTopic',ReadingTopicList);
+keystone.createList('ReadingTopicQuestion',ReadingTopicQuestionList);
+keystone.createList('VocabularyTest',VocabularyTestList);
+keystone.createList('VocabularyTestQuestion',VocabularyTestQuestionList);
 
 
 
@@ -39,11 +47,11 @@ module.exports = {
     keystone,
     apps: [
         new GraphQLApp({
-            apiPath: '/admin/api',
-            graphiqlPath: '/admin/graphiql',
+            apiPath: '/germew/api',
+            graphiqlPath: '/germew/graphiql',
         }),
         new AdminUIApp({
-            adminPath: '/admin',
+            adminPath: '/germew',
             name: "Germew",
             enableDefaultRoute: true,
             authStrategy,

@@ -53,19 +53,16 @@ module.exports={
         inference:{
             type:Relationship,
             ref:'Inference.grammar',
-            isRequired:true,
             many:false,
         },
         detail:{
             type:Relationship,
             ref:'GrammarDetail.grammar',
-            isRequired:true,
             many:true,
         },
-        test:{
+        grammarTest:{
             type:Relationship,
             ref:'GrammarTest.grammar',
-            isRequired:true,
             many:true,
         }
         
@@ -73,7 +70,7 @@ module.exports={
     },
     labelField: 'title',
     access: {
-        read: access.userIsAdminOrOwner,
+        read: access.userIsAdmin,
         update: access.userIsAdmin,
         create: access.userIsAdmin,
         delete: access.userIsAdmin,

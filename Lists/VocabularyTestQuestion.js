@@ -1,4 +1,5 @@
-const { Text, Checkbox, Password } = require('@keystonejs/fields');
+const { Text , File  , Relationship , Select} = require('@keystonejs/fields');
+const { LocalFileAdapter } = require('@keystonejs/file-adapters');
 
 // Access control functions
 const userIsAdmin = ({ authentication: { item: user } }) => Boolean(user && user.isAdmin);
@@ -17,29 +18,21 @@ const userIsAdminOrOwner = auth => {
     const isOwner = access.userOwnsItem(auth);
     return isAdmin ? isAdmin : isOwner;
 };
-
 const access = { userIsAdmin, userOwnsItem, userIsAdminOrOwner };
 
-module.exports = {
-    fields: {
-        name: { type: Text },
-        email: {
-            type: Text,
-            isUnique: true,
-        },
-        isAdmin: {
-            type: Checkbox,
-            // Field-level access controls
-            // Here, we set more restrictive field access so a non-admin cannot make themselves admin.
-            access: {
-                update: access.userIsAdmin,
-            },
-        },
-        password: {
-            type: Password,
-        },
+module.exports={
+fields:{
+    VocabularyTest:{
+        type:Relationship,
+        ref:'VocabularyTest.question',
+        isRequired:true,
+        many:false,
     },
-    // List-level access controls
+    
+
+    
+},
+labelField: 'questionTitle',
     access: {
         read: access.userIsAdmin,
         update: access.userIsAdmin,

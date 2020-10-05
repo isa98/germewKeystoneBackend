@@ -28,9 +28,9 @@ module.exports= {
             type:Text,
             isRequired:true,
         },
-        test:{
+        topic:{
             type:Relationship,
-            ref:'GrammarTest.question',
+            ref:'ReadingTopic.question',
             many:false,
             isRequired:true
         },

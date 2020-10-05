@@ -43,18 +43,26 @@ module.exports= {
         grammar:{
             type:Relationship,
             ref:'Grammar.level',
-            //refPath:'title',
-            isRequired:true,
+            many:true,
+        },
+        topic:{
+            type:Relationship,
+            ref:'ReadingTopic.level',
+            many:true,
+        },
+        vocabularyTest:{
+            type:Relationship,
+            ref:'VocabularyTest.level',
             many:true,
         }
-        
+    
 
 
     },
     labelField: 'title',
     // List-level access controls
     access: {
-        read: access.userIsAdminOrOwner,
+        read: access.userIsAdmin,
         update: access.userIsAdmin,
         create: access.userIsAdmin,
         delete: access.userIsAdmin,

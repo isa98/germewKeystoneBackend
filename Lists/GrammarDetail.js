@@ -62,7 +62,7 @@ module.exports= {
     },
     labelField: 'punkt',
     access: {
-        read: access.userIsAdminOrOwner,
+        read: access.userIsAdmin,
         update: access.userIsAdmin,
         create: access.userIsAdmin,
         delete: access.userIsAdmin,
