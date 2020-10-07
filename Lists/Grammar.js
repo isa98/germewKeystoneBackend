@@ -51,9 +51,9 @@ module.exports={
             isRequired:true
         },
         inference:{
-            type:Relationship,
-            ref:'Inference.grammar',
-            many:false,
+            type:Text,
+            isRequired:true,
+            isMultiline:true
         },
         detail:{
             type:Relationship,

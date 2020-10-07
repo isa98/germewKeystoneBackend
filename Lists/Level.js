@@ -34,6 +34,11 @@ module.exports= {
             isRequired:true,
             isUnique:true,
         },
+        inference:{
+            type:Text,
+            isRequired:true,
+            isMultiline:true
+        },
         image: {
             type: File,
             adapter: fileAdapter,

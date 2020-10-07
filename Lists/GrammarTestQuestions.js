@@ -50,7 +50,7 @@ module.exports= {
         },
         answer1Result:{
             type:Checkbox,
-            isRequired:true,
+         
 
         },
         answer2:{
@@ -64,7 +64,7 @@ module.exports= {
         },
         answer2Result:{
             type:Checkbox,
-            isRequired:true,
+          
 
         },
         answer3:{
@@ -78,7 +78,7 @@ module.exports= {
         },
         answer3Result:{
             type:Checkbox,
-            isRequired:true,
+            
 
         },
         answer4:{
@@ -92,7 +92,7 @@ module.exports= {
         },
         answer4Result:{
             type:Checkbox,
-            isRequired:true,
+           
 
         },
 

@@ -1,4 +1,4 @@
-const { Text , File  , Relationship , Select} = require('@keystonejs/fields');
+const { Text , File  , Relationship , Select , Checkbox} = require('@keystonejs/fields');
 const { LocalFileAdapter } = require('@keystonejs/file-adapters');
 
 // Access control functions
@@ -19,7 +19,11 @@ const userIsAdminOrOwner = auth => {
     return isAdmin ? isAdmin : isOwner;
 };
 const access = { userIsAdmin, userOwnsItem, userIsAdminOrOwner };
+const fileAdapter = new LocalFileAdapter({
+    src: './public/uploads',
+    path: '/public/uploads',
 
+});
 module.exports={
 fields:{
     VocabularyTest:{
@@ -28,7 +32,87 @@ fields:{
         isRequired:true,
         many:false,
     },
-    
+    questionTitle:{
+        type:Text,
+
+    },
+    questionNumber:{
+        type:Text,
+        isRequired:true,
+
+    },
+    questionImage:{
+        type: File,
+        adapter: fileAdapter,
+    },
+    answer1Image:{
+        type: File,
+        adapter: fileAdapter,
+    },
+    answer1Title:{
+        type:Text,
+        isRequired:true
+    },
+    answer1Result:{
+        type:Checkbox,
+        
+    },
+    answer1Clarification:{
+        type:Text,
+        isRequired:true,
+        isMultiline:true
+    },
+    answer2Image:{
+        type: File,
+        adapter: fileAdapter,
+    },
+    answer2Title:{
+        type:Text,
+        isRequired:true
+    },
+    answer2Result:{
+        type:Checkbox,
+        
+    },
+    answer2Clarification:{
+        type:Text,
+        isRequired:true,
+        isMultiline:true
+    },
+    answer3Image:{
+        type: File,
+        adapter: fileAdapter,
+    },
+    answer3Title:{
+        type:Text,
+        isRequired:true
+    },
+    answer3Result:{
+        type:Checkbox,
+        
+    },
+    answer3Clarification:{
+        type:Text,
+        isRequired:true,
+        isMultiline:true
+    },
+    answer4Image:{
+        type: File,
+        adapter: fileAdapter,
+    },
+    answer4Title:{
+        type:Text,
+        isRequired:true
+    },
+    answer4Result:{
+        type:Checkbox,
+        
+    },
+    answer4Clarification:{
+        type:Text,
+        isRequired:true,
+        isMultiline:true
+    },
 
     
 },

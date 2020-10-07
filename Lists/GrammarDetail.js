@@ -34,7 +34,7 @@ module.exports= {
         punkt:{
             type:Text,
             isRequired:true,
-            isUnique:true,
+            
            
         },
         example1:{
