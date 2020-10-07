@@ -1,4 +1,5 @@
-const { Text , Relationship , Select } = require('@keystonejs/fields');
+const { Text , Relationship , Select,File } = require('@keystonejs/fields');
+const { LocalFileAdapter } = require('@keystonejs/file-adapters');
 
 // Access control functions
 const userIsAdmin = ({ authentication: { item: user } }) => Boolean(user && user.isAdmin);
@@ -28,7 +29,11 @@ const options = [
     { value: '#8481F9', label: "Siren" },
     { value: '#FCC299', label: 'Malocny' },
   ];
+  const fileAdapter = new LocalFileAdapter({
+    src: './public/uploads',
+    path: '/public/uploads',
 
+});
 module.exports={
     fields:{
         level:{
@@ -49,6 +54,17 @@ module.exports={
         color:{
             type:Select,options, dataType: 'string',
             isRequired:true
+        },
+        image: {
+            type: File,
+            adapter: fileAdapter,
+            isRequired: true,
+            
+        },
+        description:{
+            type:Text,
+            isRequired:true,
+            isMultiline:true
         },
         question:{
             type:Relationship,

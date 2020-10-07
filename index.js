@@ -45,11 +45,11 @@ module.exports = {
     keystone,
     apps: [
         new GraphQLApp({
-            apiPath: '/germew/api',
-            graphiqlPath: '/germew/graphiql',
+            apiPath: '/admin/api',
+            graphiqlPath: '/admin/graphiql',
         }),
         new AdminUIApp({
-            adminPath: '/germew',
+            adminPath: '/admin',
             name: "Germew",
             enableDefaultRoute: true,
             authStrategy,
