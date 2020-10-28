@@ -54,7 +54,7 @@ module.exports = {
         }),
         new AdminUIApp({
             adminPath: '/admin',
-            name: "Germew",
+            name: "Germew", 
             enableDefaultRoute: true,
             authStrategy,
         }),
