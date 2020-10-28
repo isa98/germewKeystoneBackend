@@ -21,6 +21,10 @@ const VocabularyTestQuestionList = require('./Lists/VocabularyTestQuestion');
 const keystone =  new Keystone({
     adapter: new MongooseAdapter({ mongoUri: db.url }),
     onConnect: process.env.CREATE_TABLES !== 'true' && initialiseData,
+    cookie : {
+        secure: process.env.NODE_ENV === 'production'
+    },
+    cookieSecret : 'isa861748758',
 });
 
 keystone.createList('User',UserList);
@@ -54,7 +58,7 @@ module.exports = {
             enableDefaultRoute: true,
             authStrategy,
         }),
-        new StaticApp({
+        new StaticApp({ 
             path: '/public/uploads',
             src: './public/uploads',
 
